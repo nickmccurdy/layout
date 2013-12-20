@@ -18,7 +18,7 @@ function singleBinds()
 }
 function startBinds()
 {
-	$(".delete").live("click",function(){deleteTask(this)})
+	$(".delete").on("click", null, function(){deleteTask(this)})
 	$("#add").click(function(){addTask()})
 	$("#importer input[type=text]").bind("keydown", "return", function() {importerLoad()})
 	$("#exporter input[type=text]").bind("keydown", "return", function() {exporterClose()})
